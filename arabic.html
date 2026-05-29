@@ -1,157 +1,360 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>شركة الأدهم</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
+
+*{
     margin:0;
     padding:0;
-    line-height:1.8;
-    background:#f8f8f8;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f7fa;
     color:#333;
+    line-height:1.7;
 }
 
 header{
-    background:#1f3c5a;
+    background:#17324d;
     color:white;
     text-align:center;
-    padding:60px 20px;
+    padding:80px 20px;
+}
+
+header img{
+   max-width:450px;
+    margin-bottom:30px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+    opacity:0.95;
 }
 
 nav{
     background:white;
+    padding:18px;
     text-align:center;
-    padding:15px;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 nav a{
-    margin:0 15px;
     text-decoration:none;
-    color:#1f3c5a;
+    color:#17324d;
     font-weight:bold;
+    margin:0 12px;
+}
+
+nav a:hover{
+    color:#c9a34d;
 }
 
 section{
-    max-width:1000px;
+    max-width:1200px;
     margin:auto;
-    padding:50px 20px;
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#17324d;
+    font-size:2rem;
 }
 
 .card{
     background:white;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    background:white;
     padding:25px;
-    border-radius:10px;
-    margin-top:20px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+}
+
+.service-card h3{
+    color:#17324d;
+    margin-bottom:10px;
+}
+
+.network-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.country-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:30px;
+}
+
+.country-list div{
+    background:#eef2f6;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.country-list div:hover{
+    transform:translateY(-5px);
+}
+
+.hero-button{
+    display:inline-block;
+    margin-top:25px;
+    background:#c9a34d;
+    color:white;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero-button:hover{
+    opacity:0.9;
 }
 
 footer{
-    background:#1f3c5a;
+    background:#17324d;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:30px;
+    margin-top:50px;
 }
+
 </style>
 
 </head>
 
-<body>
+<body dir="rtl">
 
 <header>
 
-    <img src="Company Logo.png"
-         alt="شعار شركة الأدهم"
-         width="350">
+<img src="Company Logo.png"
+     alt="Aladham Company Logo">
 
-    <p>
-        ربط الموردين الدوليين بالسوق الفلسطينية
-    </p>
+<h1>شركة الأدهم</h1>
+
+<p>
+ربط الموردين الدوليين بالشركات الفلسطينية
+</p>
+
+<a class="hero-button" href="#contact">
+اتصل بنا
+</a>
 
 </header>
 
-<nav>
+<a href="index.html">English</a>
+<a href="arabic.html">العربية</a>
+<a href="hebrew.html">עברית</a>
 
-    <a href="index.html">English</a>
-    <a href="arabic.html">العربية</a>
-    <a href="hebrew.html">עברית</a>
-
-    <a href="#about">من نحن</a>
-    <a href="#customers">من نخدم</a>
-    <a href="#activities">أنشطتنا</a>
-    <a href="#contact">اتصل بنا</a>
-
-</nav>
+<a href="#about">من نحن</a>
+<a href="#why">لماذا الأدهم</a>
+<a href="#customers">من نخدم</a>
+<a href="#network">شبكة التوريد</a>
+<a href="#activities">أنشطتنا</a>
+<a href="#contact">اتصل بنا</a>
 
 <section id="about">
+
 <div class="card">
 
-<h2>من نحن</h2>
+<h2 class="section-title">من نحن</h2>
 
 <p>
 شركة الأدهم هي شركة فلسطينية متخصصة في الاستيراد والتوريد والتوزيع، وتخدم الشركات والمؤسسات في مختلف أنحاء فلسطين.
 </p>
 
-<p>
-نتخصص في استيراد وتوريد المنتجات من الشركات والمصنعين الدوليين في مجالات المكونات الغذائية والمنتجات الغذائية والمواد الكيميائية الصناعية ومواد التعبئة والتغليف والتجارة العامة.
-</p>
+<br>
 
 <p>
-من خلال عملياتنا في غزة وشبكة شركائنا في الضفة الغربية، نربط الشركات المحلية بمصادر دولية موثوقة ونوفر حلولاً فعالة للتوريد والتوزيع.
+نتخصص في البحث عن المنتجات والموردين الدوليين واستيراد وتوريد مجموعة واسعة من السلع والمواد، بما في ذلك المكونات الغذائية والمنتجات الغذائية والمواد الكيميائية الصناعية ومواد التعبئة والتغليف وغيرها من المنتجات التجارية.
 </p>
 
+<br>
+
 <p>
-نسعى إلى بناء شراكات طويلة الأمد مع الموردين حول العالم وتوفير منتجات ومواد عالية الجودة للشركات الفلسطينية.
+من خلال عملياتنا في قطاع غزة وشبكة شركائنا في الضفة الغربية، نربط الشركات الفلسطينية بمصادر توريد دولية موثوقة ونوفر حلولاً فعالة للمشتريات وسلاسل الإمداد والتوزيع.
 </p>
+
+<br>
+
+<p>
+نسعى إلى بناء شراكات طويلة الأمد مع الموردين حول العالم وتوفير وصول موثوق ومستدام للشركات الفلسطينية إلى المنتجات والمواد عالية الجودة.
+</p>
+
+</section>
+
+<section id="why">
+
+<h2 class="section-title">لماذا شركة الأدهم؟</h2>
+
+<div class="grid">
+
+<div class="service-card">
+<h3>شبكة توريد دولية</h3>
+<p>
+إمكانية الوصول إلى المصنعين والموردين في أوروبا وآسيا والشرق الأوسط وأمريكا الجنوبية.
+</p>
+</div>
+
+<div class="service-card">
+<h3>فهم السوق المحلي</h3>
+<p>
+معرفة عميقة باحتياجات السوق الفلسطينية ومتطلبات الشركات والمؤسسات المحلية.
+</p>
+</div>
+
+<div class="service-card">
+<h3>خدمات مشتريات فعالة</h3>
+<p>
+البحث عن الموردين وإدارة عمليات الشراء والتوريد من مصادر دولية موثوقة.
+</p>
+</div>
+
+<div class="service-card">
+<h3>شبكة توزيع وشراكات</h3>
+<p>
+عمليات تشغيلية في غزة وشبكة شركاء وعلاقات أعمال في الضفة الغربية.
+</p>
+</div>
 
 </div>
+
 </section>
 
 <section id="customers">
-<div class="card">
 
-<h2>من نخدم</h2>
+<h2 class="section-title">من نخدم</h2>
 
-<p>
-تقدم شركة الأدهم خدمات الاستيراد والتوريد والتوزيع لمجموعة واسعة من العملاء في فلسطين.
-</p>
+<div class="grid">
 
+<div class="service-card">
 <h3>المصانع والمنشآت الإنتاجية</h3>
-
 <p>
-نساعد المصانع في الحصول على المواد الخام المستوردة والمكونات الغذائية والمواد الكيميائية الصناعية ومواد التعبئة والتغليف ومدخلات الإنتاج من موردين دوليين موثوقين.
+نساعد المصانع في تأمين المكونات الغذائية المستوردة والمواد الكيميائية الصناعية ومواد التعبئة والتغليف وغيرها من مستلزمات الإنتاج اللازمة للعمليات التصنيعية.
 </p>
+</div>
 
+<div class="service-card">
 <h3>تجار التجزئة والموزعون</h3>
-
 <p>
-نوفر لتجار التجزئة والموزعين منتجات مستوردة عالية الجودة وحلول توريد موثوقة تلبي احتياجات السوق.
+نوفر لتجار التجزئة والموزعين إمكانية الوصول إلى المنتجات الغذائية والسلع الاستهلاكية المستوردة وحلول التوريد من الموردين الدوليين الموثوقين.
 </p>
+</div>
 
+<div class="service-card">
 <h3>التجار وتجار الجملة</h3>
-
 <p>
-نعمل مع التجار المحليين وتجار الجملة الذين يبحثون عن قنوات توريد دولية موثوقة وحلول فعالة لسلاسل الإمداد.
+ندعم التجار وتجار الجملة من خلال البحث عن فرص التوريد الدولية وتسهيل عمليات الشراء من المصنعين والمصدرين حول العالم.
 </p>
+</div>
 
+<div class="service-card">
 <h3>المنظمات الدولية والمؤسسات غير الحكومية</h3>
-
 <p>
-نساعد المؤسسات والمنظمات العاملة في الأراضي الفلسطينية من خلال توفير المنتجات والمواد اللازمة لمشاريعها وعملياتها التشغيلية.
+نقدم خدماتنا للمنظمات الإنسانية ووكالات التنمية والمؤسسات الدولية العاملة في الأراضي الفلسطينية في مجال توريد المنتجات والمواد والمعدات اللازمة لمشاريعها وبرامجها التشغيلية.
 </p>
+</div>
 
 </div>
+
 </section>
 
-<section id="activities">
-<div class="card">
+<section id="network">
 
-<h2>أنشطتنا</h2>
+<h2 class="section-title">شبكة التوريد العالمية</h2>
+
+<div class="network-box">
+
+<p style="text-align:center; font-size:1.1rem;">
+تحتفظ شركة الأدهم بعلاقات توريد وشراكات مع موردين ومصنعين في أوروبا وآسيا والشرق الأوسط وأمريكا الجنوبية.
+</p>
+
+<br>
+
+<p style="text-align:center;">
+تتيح لنا شبكتنا الدولية الوصول إلى المصنعين والمصدرين والشركاء التجاريين القادرين على تلبية احتياجات الشركات والمؤسسات الفلسطينية.
+</p>
+
+<div class="country-list">
+
+<div>
+<strong>آسيا</strong>
+China<br>
+South Korea<br>
+Vietnam<br>
+India
+</div>
+
+<div>
+<strong>أوروبا</strong>
+Belgium<br>
+Netherlands<br>
+France<br>
+Poland<br>
+Germany<br>
+Italy
+</div>
+
+<div>
+<strong>الشرق الأوسط</strong>
+Egypt<br>
+Israel
+</div>
+
+<div>
+<strong>أمريكا الجنوبية</strong>
+Brazil<br>
+Colombia<br>
+Peru
+</div>
+
+
+
+</section>
+
+<h2 class="section-title">أنشطتنا</h2>
+
+<h2 class="section-title">Activities</h2>
+
+<div class="card">
 
 <ul>
 <li>استيراد وتوزيع المكونات الغذائية والمنتجات الغذائية</li>
@@ -163,30 +366,37 @@ footer{
 </ul>
 
 </div>
+
 </section>
 
 <section id="contact">
+
+<h2 class="section-title">اتصل بنا</h2>
+
 <div class="card">
 
-<h2>اتصل بنا</h2>
-
 <p>
-<strong>البريد الإلكتروني:</strong>
+<strong>Email:</strong>
 contact@aladhamco.com
 </p>
 
+<br>
+
 <p>
-<strong>العنوان:</strong><br>
-شارع أحمد فكري أبو وردة 10<br>
-جباليا – شمال غزة<br>
+<strong>العنوان:</strong>
+10 شارع أحمد فكري أبو وردة
+<br>
+جباليا – شمال غزة
+<br>
 فلسطين
 </p>
 
 </div>
+
 </section>
 
 <footer>
-© 2026 شركة الأدهم. جميع الحقوق محفوظة.
+©  2026 شركة الأدهم. جميع الحقوق محفوظة.
 </footer>
 
 </body>
