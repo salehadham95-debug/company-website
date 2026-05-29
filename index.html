@@ -24,7 +24,7 @@ header{
     background:#17324d;
     color:white;
     text-align:center;
-    padding:70px 20px;
+    padding:80px 20px;
 }
 
 header img{
@@ -122,17 +122,15 @@ section{
 
 .country-list div{
     background:#eef2f6;
-    padding:12px;
-    border-radius:8px;
+    padding:20px;
+    border-radius:12px;
     text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
 }
 
-footer{
-    background:#17324d;
-    color:white;
-    text-align:center;
-    padding:30px;
-    margin-top:50px;
+.country-list div:hover{
+    transform:translateY(-5px);
 }
 
 .hero-button{
@@ -150,56 +148,125 @@ footer{
     opacity:0.9;
 }
 
+footer{
+    background:#17324d;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
 </style>
 
 </head>
+
 <body>
 
 <header>
 
-    <img src="Company Logo.png"
-         alt="Aladham Company Logo"
-         width="350">
+<img src="Company Logo.png"
+     alt="Aladham Company Logo">
 
-    <h1>ALADHAM COMPANY</h1>
+<h1>ALADHAM COMPANY</h1>
 
 <p>
-Connects International Suppliers with the Palestinian Market
+Connecting International Suppliers with the Palestinian Market
 </p>
 
-
+<p>
+Import • Distribution • Procurement • Trade Solutions
+</p>
 
 <a class="hero-button" href="#contact">
 Contact Us
 </a>
 
 </header>
-<nav>
-    <a href="index.html">English</a>
-    <a href="arabic.html">العربية</a>
-    <a href="hebrew.html">עברית</a>
 
-    <a href="#about">About</a>
-    <a href="#customers">Who We Serve</a>
-    <a href="#activities">Activities</a>
-    <a href="#network">Global Network</a>
-    <a href="#contact">Contact</a>
+<nav>
+
+<a href="index.html">English</a>
+<a href="arabic.html">العربية</a>
+<a href="hebrew.html">עברית</a>
+
+<a href="#about">About</a>
+<a href="#why">Why Us</a>
+<a href="#customers">Who We Serve</a>
+<a href="#network">Global Network</a>
+<a href="#activities">Activities</a>
+<a href="#contact">Contact</a>
+
 </nav>
 
 <section id="about">
+
 <div class="card">
-<h2>About Us</h2>
+
+<h2 class="section-title">About Us</h2>
 
 <p>
 Aladham Company is a Gaza-based import, sourcing, and distribution company serving businesses throughout Palestine.
-
-We specialize in identifying, importing, and supplying products from international manufacturers and suppliers across multiple sectors, including food ingredients, food products, industrial chemicals, packaging materials, and general trading goods.
-
-Through our operations in Gaza and our partner network in the West Bank, we connect local businesses with reliable international sources while facilitating efficient procurement and distribution.
-
-Our mission is to build long-term partnerships with suppliers worldwide and provide Palestinian businesses with dependable access to high-quality products and materials.
-
 </p>
+
+<br>
+
+<p>
+We specialize in identifying, importing, and supplying products from international manufacturers and suppliers across multiple sectors, including food ingredients, food products, industrial chemicals, packaging materials, and general trading goods.
+</p>
+
+<br>
+
+<p>
+Through our operations in Gaza and our partner network in the West Bank, we connect local businesses with reliable international sources while facilitating efficient procurement and distribution.
+</p>
+
+<br>
+
+<p>
+Our mission is to build long-term partnerships with suppliers worldwide and provide Palestinian businesses with dependable access to high-quality products and materials.
+</p>
+
+</div>
+
+</section>
+
+<section id="why">
+
+<h2 class="section-title">Why Choose Aladham</h2>
+
+<div class="grid">
+
+<div class="service-card">
+<h3>International Sourcing</h3>
+<p>
+Access to suppliers and manufacturers across Europe, Asia, the Middle East and South America.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Local Market Knowledge</h3>
+<p>
+Deep understanding of Palestinian market requirements and customer needs.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Efficient Procurement</h3>
+<p>
+Reliable sourcing, supplier identification and procurement support.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Distribution Network</h3>
+<p>
+Operations in Gaza supported by partner relationships throughout the West Bank.
+</p>
+</div>
+
+</div>
+
+</section>
 
 <section id="customers">
 
@@ -210,51 +277,35 @@ Our mission is to build long-term partnerships with suppliers worldwide and prov
 <div class="service-card">
 <h3>Manufacturers & Factories</h3>
 <p>
-We help manufacturers secure imported raw materials, food ingredients, industrial chemicals, packaging solutions, and production inputs from trusted international suppliers.
+Imported raw materials, food ingredients, industrial chemicals, packaging solutions and production inputs.
 </p>
 </div>
 
 <div class="service-card">
 <h3>Retailers & Distributors</h3>
 <p>
-We supply retailers and distributors with high-quality imported products and dependable procurement solutions tailored to market needs.
+High-quality imported products and dependable procurement solutions tailored to market needs.
 </p>
 </div>
 
 <div class="service-card">
 <h3>Traders & Wholesalers</h3>
 <p>
-We work with local traders and wholesalers seeking reliable international sourcing channels and efficient supply solutions.
+Reliable international sourcing channels and efficient supply solutions.
 </p>
 </div>
 
 <div class="service-card">
 <h3>NGOs & International Organizations</h3>
 <p>
-Assisting international organizations operating in the Palestinian Territories by facilitating the sourcing and delivery of products and materials required for their projects and operations.
+Procurement and sourcing support for projects and operations throughout Palestine.
 </p>
 </div>
 
-
-
 </div>
+
 </section>
 
-<section id="activities">
-<div class="card">
-<h2>Activities</h2>
-
-<ul>
-<li>Import and distribution of food ingredients and food products</li>
-<li>Industrial chemicals and raw materials</li>
-<li>Packaging materials</li>
-<li>General trading</li>
-<li>Supplier sourcing and procurement</li>
-<li>Wholesale distribution</li>
-</ul>
-
-</div>
-</section>
 <section id="network">
 
 <h2 class="section-title">Global Supply Network</h2>
@@ -262,21 +313,19 @@ Assisting international organizations operating in the Palestinian Territories b
 <div class="network-box">
 
 <p style="text-align:center; font-size:1.1rem;">
-Aladham Company maintains sourcing relationships and supplier connections across Europe, Asia, the Middle East, and South America.
+Aladham Company maintains sourcing relationships and supplier connections across Europe, Asia, the Middle East and South America.
 </p>
+
+<br>
 
 <p style="text-align:center;">
-Our international network enables us to identify reliable manufacturers, exporters, and trading partners capable of supplying products that meet the requirements of Palestinian businesses and organizations.
+Our international network enables us to identify reliable manufacturers, exporters and trading partners capable of supplying products that meet the requirements of Palestinian businesses and organizations.
 </p>
 
-</div>
-
-</section>
-
-    <div class="country-list">
+<div class="country-list">
 
 <div>
-<strong>Asia</strong><br>
+<strong>Asia</strong><br><br>
 China<br>
 South Korea<br>
 Vietnam<br>
@@ -284,7 +333,7 @@ India
 </div>
 
 <div>
-<strong>Europe</strong><br>
+<strong>Europe</strong><br><br>
 Belgium<br>
 Netherlands<br>
 France<br>
@@ -293,22 +342,21 @@ Italy
 </div>
 
 <div>
-<strong>Middle East</strong><br>
+<strong>Middle East</strong><br><br>
 Egypt<br>
 Israel
 </div>
 
 <div>
-<strong>South America</strong><br>
+<strong>South America</strong><br><br>
 Brazil<br>
 Colombia<br>
 Peru
 </div>
 
-
-
 </div>
-    <div style="
+
+<div style="
 margin-top:40px;
 background:#eef2f6;
 height:350px;
@@ -324,20 +372,52 @@ Global Supply Network Map
 (Coming Soon)
 
 </div>
-<section id="contact">
+
+</div>
+
+</section>
+
+<section id="activities">
+
+<h2 class="section-title">Activities</h2>
+
 <div class="card">
-<h2>Contact</h2>
 
-<p><strong>Email:</strong> contact@aladhamco.com</p>
+<ul>
+<li>Import and distribution of food ingredients and food products</li>
+<li>Industrial chemicals and raw materials</li>
+<li>Packaging materials</li>
+<li>General trading</li>
+<li>Supplier sourcing and procurement</li>
+<li>Wholesale distribution</li>
+</ul>
 
+</div>
 
-<p><strong>Address:</strong><br>
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p>
+<strong>Email:</strong>
+contact@aladhamco.com
+</p>
+
+<br>
+
+<p>
+<strong>Address:</strong><br>
 10 Ahmed Fikri Abuwarda St.<br>
 Jabalia, North Gaza<br>
 Palestine
 </p>
 
 </div>
+
 </section>
 
 <footer>
