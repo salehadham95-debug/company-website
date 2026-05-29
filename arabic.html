@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>شركة الأدهم</title>
+    
 
 <style>
 
@@ -42,22 +43,25 @@ header p{
     font-size:1.2rem;
     opacity:0.95;
 }
-
 nav{
     background:white;
     padding:18px;
-    text-align:center;
     box-shadow:0 2px 8px rgba(0,0,0,0.08);
-    position:sticky;
-    top:0;
-    z-index:1000;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
 }
+
 
 nav a{
     text-decoration:none;
     color:#17324d;
     font-weight:bold;
-    margin:0 12px;
+    margin:0;
+    white-space:nowrap;
 }
 
 nav a:hover{
